@@ -1,0 +1,10 @@
+@import './themes/variables';
+
+body {
+  overflow: hidden;
+
+  .App {
+    background-color: $bg-light-green;
+  }
+
+}

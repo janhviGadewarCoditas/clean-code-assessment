@@ -1,0 +1,77 @@
+@import '../../themes/variables';
+
+.Order {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: $cursive;
+
+    .HeaderRow {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 2fr;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        color: $text-brown;
+        font-family: $cursive;
+        border-bottom: thin solid $text-brown;
+    }
+
+    .HeaderItem {
+        text-align: center;
+    }
+
+    .OrderRow {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 2fr;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        padding: 1rem;
+        border-bottom: thin solid $text-brown;
+        color: rgb(95, 94, 94);
+    }
+
+    .OrderId {
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    .items {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        cursor: pointer;
+        transition: all .125s;
+
+        &:hover {
+            color: $link-blue;
+        }
+    }
+
+    .Prescription {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+            color: rgb(95, 94, 94);
+            &:hover {
+                color: $link-blue;
+            }
+        }
+
+        .Eye {
+            cursor: pointer;
+            transition: all .125s;
+
+            &:hover {
+                color: $link-blue;
+            }
+        }
+    }
+}

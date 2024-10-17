@@ -1,0 +1,40 @@
+@import '../../themes/variables';
+
+.CustomerView {
+    min-height: 100vh;
+
+    .ViewOrder {
+        display: flex;
+        padding: 1rem 6rem;
+        margin-top: 1rem;
+        gap: 1rem;
+
+        button {
+            padding: .75rem 2rem;
+            border-radius: 2rem;
+            border: thin solid white;
+            background-color: white;
+            color: $text-dark-brown;
+            cursor: pointer;
+            font-family: $font;
+            font-weight: bold;
+            transition: all 0.75s;
+
+            &:hover {
+                background-color: $bg-dark-blue;
+                color: white;
+            }
+        }
+    }
+
+    .SupplierList {
+        padding: 0rem 4rem;
+    }
+}
+
+.Popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 88.5vh;
+}

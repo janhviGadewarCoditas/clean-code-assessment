@@ -1,0 +1,111 @@
+@import '../../themes/variables';
+
+.TrackOrder {
+    min-height: 88.5vh;
+    font-family: $cursive;
+    color: $text-dark-brown;
+
+    .GoBack {
+        padding-left: 2rem;
+        padding-top: 1rem;
+        display: flex;
+        cursor: pointer;
+    }
+
+    .Main {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .UpperDiv {
+            .p1,
+            .p2 {
+                color: $text-brown;
+                font-weight: bolder;
+                font-size: 1rem;
+            }
+
+            .p3 {
+                color: $text-blue;
+                font-weight: bolder;
+                font-size: 3rem;
+            }
+
+            .p4,
+            .p5 {
+                color: $text-brown;
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .LowerDiv {
+        display: flex;
+        gap: .25rem;
+        flex-direction: column;
+
+        .Form {
+            display: flex;
+            gap: 1rem;
+            flex: 1;
+
+            input {
+                border-style: none;
+                padding: 1rem;
+            }
+
+            button {
+                padding: 1rem 1.5rem;
+                border-style: none;
+                background-color: $bg-dark-blue;
+                color: white;
+                font-weight: 700;
+                border-radius: 50px;
+                cursor: pointer;
+                transition: all .75s;
+
+                &:hover {
+                    background-color: $text-blue;
+                }
+            }
+        }
+
+        .OrderDetails {
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 1rem 0;
+
+                th, td {
+                    padding: 0.75rem;
+                    text-align: left;
+                }
+
+                th {
+                    background-color: $bg-dark-blue;
+                    color: white;
+                }
+
+                td {
+                    background-color: white;
+                    color: $text-dark-brown;
+                }
+
+                button {
+                    padding: 0.5rem 1rem;
+                    border-style: none;
+                    background-color: $bg-dark-blue;
+                    color: white;
+                    cursor: pointer;
+                    border-radius: 0.25rem;
+
+                    &:hover {
+                        background-color: $text-blue;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,101 @@
+@import '../../themes/variables';
+
+.UploadPres {
+    position: relative;
+    overflow: hidden;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: white;
+    box-shadow: 0px 2px 8px 0px #ccc;
+    border-radius: .5rem;
+
+    .CloseIcon {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+
+    .itemsInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        h1 {
+            font-family: $cursive;
+            color: $bg-dark-blue;
+        }
+
+        .ItemList {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            color: $text-dark-brown;
+            margin-top: 1rem;
+
+            .Item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 2rem;
+
+                .ItemName {
+                    font-size: medium;
+                    font-family: $cursive;
+                    flex: 1;
+                }
+
+                .CounterWrapper {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    .PresForm {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .Input {
+            display: flex;
+            gap: 1rem;
+            font-family: $cursive;
+            font-size: smaller;
+            color: $text-dark-brown;
+        }
+
+        button {
+            padding: .75rem 1.5rem;
+            border-radius: 2rem;
+            border: thin solid $bg-light-green;
+            background-color: $bg-light-green;
+            color: $text-dark-brown;
+            font-size: large;
+            cursor: pointer;
+            font-family: $cursive;
+            transition: all 0.75s;
+
+            &:hover {
+                background-color: $bg-dark-blue;
+                color: white;
+            }
+        }
+
+        .Status, .OrderId {
+            font-family: $cursive;
+            color: $text-green;
+        }
+        .Id{
+            color: $text-blue;
+            font-size: larger;
+            font-weight: bold;
+        }
+    }
+}

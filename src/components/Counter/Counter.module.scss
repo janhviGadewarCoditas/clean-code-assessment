@@ -1,0 +1,24 @@
+@import "../../themes/variables";
+.Counter {
+    display: flex;
+    gap: .25rem;
+    :nth-child(2) {
+        border-radius: 5px;
+        background-color: $bg-dark-blue;
+        color: white;
+    }
+    span{
+        padding: .35rem .75rem;
+        border: thin solid white;
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: $bg-dark-green;
+        transition: all .25s;
+        font-size: medium;
+        
+        &:hover {
+            background-color: $text-blue;
+            color: white;
+        }
+    }
+}

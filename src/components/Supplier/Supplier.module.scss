@@ -1,0 +1,86 @@
+@import '../../themes/variables';
+
+.Supplier {
+  padding: 1.5rem 4rem;
+  border: 5px;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 8px 0px #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .Checkbox {
+    cursor: pointer;
+  }
+
+  .VisibleInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .SupplierInfo {
+      display: flex;
+      align-items: center;
+      gap: 2rem; // Adjust the gap to your preference
+
+      .SupplierName {
+        font-family: $font;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        color: $text-dark-brown;
+      }
+
+      .Rating {
+        font-weight: bolder;
+        color: $text-dark-brown;
+        font-family: $font;
+      }
+    }
+
+    .AccordionIcon {
+      cursor: pointer;
+    }
+  }
+
+  .InvisibleInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .Header,
+    .itemsInfo {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .Checkbox {
+        flex: 0 0 auto;
+      }
+    }
+
+    .Header {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .itemsInfo {
+      font-family: $font;
+      color: $text-dark-brown;
+      font-weight: bold;
+
+      .ItemDetails {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+      }
+
+      .Name,
+      .Power,
+      .Expiry {
+        flex: 1;
+        text-align: left;
+      }
+    }
+  }
+}

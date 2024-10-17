@@ -1,0 +1,9 @@
+.SupplierList {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-height: 60vh; 
+    overflow-y: auto; 
+  }
+  
