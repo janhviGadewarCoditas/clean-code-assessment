@@ -1,3 +1,4 @@
+// medicines here denote as items
 export const suppliers = [
   {
     id: 1,
